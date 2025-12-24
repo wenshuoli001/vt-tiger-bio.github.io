@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: "Visual-textual Dermatoglyphic Animal Biometrics: A First Case Study on Panthera tigris"
