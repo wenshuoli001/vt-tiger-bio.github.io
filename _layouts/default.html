@@ -26,11 +26,28 @@
       .page-header::after {
         display: none !important;
       }
+      body header.page-header h2.project-tagline,
+      header.page-header h2.project-tagline,
+      .page-header h2.project-tagline,
       body header.page-header .project-tagline,
       header.page-header .project-tagline,
       .page-header .project-tagline,
-      .project-tagline {
+      .project-tagline,
+      h2.project-tagline {
         color: #ffffff !important;
+        color: rgb(255, 255, 255) !important;
+        opacity: 1 !important;
+        filter: none !important;
+        text-shadow: none !important;
+      }
+      .project-tagline * {
+        color: #ffffff !important;
+      }
+      header[role="banner"] h2.project-tagline {
+        color: #ffffff !important;
+        color: rgb(255, 255, 255) !important;
+        opacity: 1 !important;
+        filter: none !important;
       }
       body header.page-header .btn,
       header.page-header .btn,
@@ -52,7 +69,7 @@
 
     <header class="page-header" role="banner" style="background: url('{{ site.baseurl }}/assets/media/images/pattern.png') repeat !important; background-color: transparent !important;">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline" style="color: #ffffff !important;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <h2 class="project-tagline" style="color: #ffffff !important; color: rgb(255, 255, 255) !important; opacity: 1 !important; filter: none !important; text-shadow: none !important;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
         <a href="https://github.com/wenshuoli001/Visual-textual-Dermatoglyphic-Animal-Biometrics" class="btn" style="color: #ffffff !important; border-color: #ffffff !important; background-color: transparent !important;">Project files and source code</a>
         <a href="https://arxiv.org/abs/2512.14878" class="btn" style="color: #ffffff !important; border-color: #ffffff !important; background-color: transparent !important;">Arxiv</a>
